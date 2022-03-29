@@ -2,7 +2,7 @@ import { Pie } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
 import { getSchedule } from "../services/ApiService";
 
-export function Schedule() {
+export function ScheduleChart() {
     const [chartOptions, setChartOptions] = useState({});
     const [chartData, setChartData] = useState({
         datasets: [],

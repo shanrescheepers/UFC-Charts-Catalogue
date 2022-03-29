@@ -13,7 +13,7 @@ import {
   RadialLinearScale,
 } from "chart.js";
 import { React } from "react";
-import { Schedule } from './components/Schedule';
+import { ScheduleChart } from './components/ScheduleChart';
 
 ChartJS.register(
   CategoryScale,
@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hi</h1>
-      <Schedule />
+      <ScheduleChart />
     </div>
   );
 }
