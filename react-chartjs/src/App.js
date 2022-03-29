@@ -14,6 +14,7 @@ import {
 } from "chart.js";
 import { React } from "react";
 import { ScheduleChart } from './components/ScheduleChart';
+import { TotalFighters } from './components/TotalFighters';
 
 ChartJS.register(
   CategoryScale,
@@ -33,6 +34,7 @@ function App() {
     <div className="App">
       <h1>Hi</h1>
       <ScheduleChart />
+      <TotalFighters />
     </div>
   );
 }
