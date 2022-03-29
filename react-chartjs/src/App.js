@@ -15,6 +15,7 @@ import {
 import { React } from "react";
 import { ScheduleChart } from './components/ScheduleChart';
 import { TotalFighters } from './components/TotalFighters';
+import { AvgFighterStats } from './components/AvgFighterStats';
 
 ChartJS.register(
   CategoryScale,
@@ -32,9 +33,7 @@ ChartJS.register(
 function App() {
   return (
     <div className="App">
-      <h1>Hi</h1>
-      <ScheduleChart />
-      <TotalFighters />
+      <AvgFighterStats />
     </div>
   );
 }

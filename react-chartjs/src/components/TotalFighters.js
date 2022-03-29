@@ -11,7 +11,7 @@ export function TotalFighters() {
                 count: fighters.length
             });
         })
-    })
+    }, [])
 
     return (
         <div>
