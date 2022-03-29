@@ -13,9 +13,11 @@ import {
   RadialLinearScale,
 } from "chart.js";
 import { React } from "react";
-import { ScheduleChart } from './components/ScheduleChart';
-import { TotalFighters } from './components/TotalFighters';
-import { AvgFighterStats } from './components/AvgFighterStats';
+import { Routes, Route } from 'react-router-dom';
+import { Dashboard } from './pages/Dashboard';
+import { Timeline } from './pages/Timeline';
+import { Comparison } from './pages/Comparison';
+import { HeaderNav } from './components/HeaderNav';
 
 ChartJS.register(
   CategoryScale,
@@ -33,7 +35,12 @@ ChartJS.register(
 function App() {
   return (
     <div className="App">
-      <AvgFighterStats />
+      <HeaderNav />
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/comparison" element={<Comparison />} />
+        <Route path="/timeline" element={<Timeline />} />
+      </Routes>
     </div>
   );
 }
