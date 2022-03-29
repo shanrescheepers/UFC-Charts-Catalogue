@@ -1,0 +1,8 @@
+.schedule-chart {
+    height: 25%;
+    width: 25%;
+    margin-left: 33.3%;
+    text-align: center !important;
+    display: grid !important;
+    place-items: center !important;
+}

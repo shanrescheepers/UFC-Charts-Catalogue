@@ -1,6 +1,7 @@
 import { Pie } from "react-chartjs-2";
 import React, { useState, useEffect } from "react";
 import { getSchedule } from "../services/ApiService";
+import '../styles/ScheduleChart.css'
 
 export function ScheduleChart() {
     const [chartOptions, setChartOptions] = useState({});
@@ -39,7 +40,10 @@ export function ScheduleChart() {
     }, []);
 
     return (
-        <Pie options={chartOptions} data={chartData} />
+        <div className="schedule-chart">
+            <Pie options={chartOptions} data={chartData} />
+        </div>
+
     );
 }
 
