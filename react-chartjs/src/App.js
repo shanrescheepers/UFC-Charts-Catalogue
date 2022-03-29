@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -37,7 +38,7 @@ function App() {
     <div className="App">
       <HeaderNav />
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/comparison" element={<Comparison />} />
         <Route path="/timeline" element={<Timeline />} />
       </Routes>
