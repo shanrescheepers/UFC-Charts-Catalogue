@@ -14,6 +14,7 @@ export function Timeline() {
         var fightCount = 0;
         getSchedule(2022).then(schedule => {
             getEvent(schedule[0].EventId).then(event => {
+                // console.log(event);
                 event.Fights.forEach(fight => {
                     fightCount++;
                     fights.push(`Fight: ${fightCount}`);
@@ -21,12 +22,17 @@ export function Timeline() {
                 });
 
                 setChartData({
-                    labels: fights,
+                    labels: event.Fights.map(fight => `${fight.Fighters[0].LastName} vs ${fight.Fighters[1].LastName}`),
                     datasets: [
                         {
-                            label: "Fights",
-                            data: fightDiffs,
+                            label: "Fighter 1",
+                            data: event.Fights.map(fight => fight.Fighters[0].Moneyline),
                             backgroundColor: "#E31C25",
+                        },
+                        {
+                            label: "Fighter 2",
+                            data: event.Fights.map(fight => fight.Fighters[1].Moneyline),
+                            backgroundColor: "#2b2b2b",
                         },
                     ]
                 });
@@ -47,6 +53,8 @@ export function Timeline() {
     return (
         <div>
             <h1>See how evenly each fight was matched</h1>
+            <p>UFC moneyline betting simply comes down to betting on who you believe is going to win the fight. For example, Conor McGregor was a -140 favorite for his fight vs Eddie Alvarez</p>
+            <p>If the line is open, there was no moneyline given to the fighters</p>
             <div className="linechart">
                 <Line options={chartOptions} data={chartData} />
             </div>
