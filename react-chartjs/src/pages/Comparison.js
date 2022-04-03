@@ -7,6 +7,7 @@ export function Comparison() {
             <h1>Next Fight Win Lose Draw Comparison</h1>
             <NextFightStats />
             <h1>Fighter Comparison</h1>
+            {/* reusable component */}
             <FighterComparison />
         </div>
     )
