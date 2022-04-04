@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import { getEvent, getSchedule } from "../services/ApiService";
 import '../styles/Timeline.css'
+
+
 export function Timeline() {
     const [chartOptions, setChartOptions] = useState({});
     const [chartData, setChartData] = useState({

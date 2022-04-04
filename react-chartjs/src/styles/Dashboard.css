@@ -1,0 +1,36 @@
+.flex-column {
+    flex-direction: column;
+
+}
+
+.header-container {
+    width: 100%;
+}
+
+.row-one {
+    height: 100px;
+}
+
+.row-two {
+    float: right;
+    width: 50%;
+    height: 17vh;
+    margin-top: -7%;
+    background-color: #2b2b2b;
+}
+
+/* 
+.welcome {
+    background-color: antiquewhite;
+    float: left;
+
+    margin-right: 100%;
+}
+
+.dashboard-section {
+    width: auto;
+}
+
+.dash-container {
+    width: 80%;
+} */

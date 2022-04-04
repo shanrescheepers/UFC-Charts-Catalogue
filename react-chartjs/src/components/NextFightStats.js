@@ -43,8 +43,8 @@ export function NextFightStats() {
                         },
                     },
                 });
-            })
-        })
+            });
+        });
     }, []);
 
     return (

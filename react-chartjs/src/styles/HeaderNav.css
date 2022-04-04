@@ -1,0 +1,10 @@
+.flex-column {
+    flex-direction: column;
+
+}
+
+
+ul ul,
+ol ul {
+    list-style: none;
+}

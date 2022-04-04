@@ -10,8 +10,8 @@ export function TotalFighters() {
             setTotalFighters({
                 count: fighters.length
             });
-        })
-    }, [])
+        });
+    }, []);
 
     return (
         <div className="total-fighters">

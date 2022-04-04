@@ -15,10 +15,17 @@ import {
 } from "chart.js";
 import { React } from "react";
 import { Routes, Route } from 'react-router-dom';
-import { Dashboard } from './pages/Dashboard';
 import { Timeline } from './pages/Timeline';
+import { Dashboard } from './pages/Dashboard';
 import { Comparison } from './pages/Comparison';
 import { HeaderNav } from './components/HeaderNav';
+import { Nav } from 'react-bootstrap';
+
+
+
+
+
+
 
 ChartJS.register(
   CategoryScale,
@@ -37,11 +44,13 @@ function App() {
   return (
     <div className="App">
       <HeaderNav />
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/comparison" element={<Comparison />} />
-        <Route path="/timeline" element={<Timeline />} />
-      </Routes>
+      <section>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/comparison" element={<Comparison />} />
+          <Route path="/timeline" element={<Timeline />} />
+        </Routes>
+      </section>
     </div>
   );
 }
