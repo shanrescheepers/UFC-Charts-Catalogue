@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Radar } from "react-chartjs-2";
 import { getEvent, getFighter, getSchedule } from "../services/ApiService";
 
-export function FighterComparison() {
+export function NextFightWinLose() {
     const [chartOptions, setChartOptions] = useState({});
     const [chartData, setChartData] = useState({
         datasets: [],

@@ -1,14 +1,16 @@
-import { FighterComparison } from "../components/FighterComparison"
-import { NextFightStats } from "../components/NextFightStats"
+import { FighterStats } from "../components/FighterStats"
+import '../styles/Comparison.css';
+import fighter1 from '../images/fighter_compare_1.svg'
+import fighter2 from '../images/fighter_compare_2.svg'
 
 export function Comparison() {
     return (
         <div>
-            <h1>Next Fight Win Lose Draw Comparison</h1>
-            <NextFightStats />
-            <h1>Fighter Comparison</h1>
-            {/* reusable component */}
-            <FighterComparison />
+            <h1>Compare two fighters!</h1>
+            <div className="fighter-stat-grid">
+                <FighterStats fighterImg={fighter1} />
+                <FighterStats fighterImg={fighter2} />
+            </div>
         </div>
     )
 }
