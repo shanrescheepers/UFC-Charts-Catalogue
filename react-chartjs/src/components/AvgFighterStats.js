@@ -32,17 +32,17 @@ export function AvgFighterStats() {
 
     return (
         <div className="stats-grid">
-            <div>
-                <p>Average Wins</p>
-                <h1>{fighterStats.avgWins}</h1>
+            <div className="numberCircle">
+                <span>Average Wins</span>
+                <h2>{fighterStats.avgWins}</h2>
             </div>
-            <div>
-                <p>Average Draws</p>
-                <h1>{fighterStats.avgDraws}</h1>
+            <div className="numberCircle">
+                <span>Average Draws</span>
+                <h2>{fighterStats.avgDraws}</h2>
             </div>
-            <div>
-                <p>Average Losses</p>
-                <h1>{fighterStats.avgLosses}</h1>
+            <div className="numberCircle">
+                <span>Average Losses</span>
+                <h2>{fighterStats.avgLosses}</h2>
             </div>
         </div>
     )

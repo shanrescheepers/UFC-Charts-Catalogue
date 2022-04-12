@@ -15,7 +15,7 @@ export function TotalFighters() {
 
     return (
         <div className="total-fighters">
-            <p>TOTAL FIGHTERS</p>
+            <span>TOTAL FIGHTERS</span>
             <h1>{totalFighters.count}</h1>
         </div>
     );

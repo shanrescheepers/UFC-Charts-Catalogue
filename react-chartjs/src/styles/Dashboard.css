@@ -1,0 +1,8 @@
+.welcome-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    padding: 50px;
+    background-color: bisque;
+}
