@@ -56,20 +56,10 @@ export function FighterComparison() {
                 })
 
             })
-        });
-    }, []);
+        })
+    })
 
     return (
-        <div>
-
-            <div>
-                <Radar data={chartData} options={chartOptions} />
-            </div>
-
-        </div>
-
-
-
-
+        <Radar data={chartData} options={chartOptions} />
     )
 }

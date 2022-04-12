@@ -23,8 +23,8 @@ export function ScheduleChart() {
                         backgroundColor: ["#111111", "#E31C25"],
                     },
                 ]
-            })
-        }, []);
+            });
+        })
         setChartOptions({
             responsive: true,
             plugins: {
