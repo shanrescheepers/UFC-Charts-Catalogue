@@ -8,6 +8,7 @@ import { FighterStats } from '../components/FighterStats';
 import '../styles/Dashboard.css'
 
 
+
 export function Dashboard() {
     return (
         <section className='section-dash'>
@@ -18,7 +19,10 @@ export function Dashboard() {
                     <p className='p1'>Built for and by fans of the UFC</p>
                     <p className='p2'>See how we've analysed fight, event and fighter data. <br />
                         Go on and hover on the graphs!</p>
-                    <div></div>
+                    <div>
+                        {/* <lottie-player src='https://assets2.lottiefiles.com/private_files/lf30_2iewyzzp.json' speed="1" style="width: 100px; height: 100px;" hover loop controls autoplay></lottie-player> */}
+                        <div className='fighter'></div>
+                    </div>
                 </div>
 
                 <div className='total-avg-fighter-stats'>

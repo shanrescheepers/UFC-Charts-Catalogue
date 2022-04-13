@@ -40,7 +40,13 @@ h1{
     /* background-color: rgb(116, 92, 64); */
   
 }
-
+.fighter{
+    background-image: url(../images/compares.svg);
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
 .nextfight-stats-grid {
     color: black;
     display: row;
