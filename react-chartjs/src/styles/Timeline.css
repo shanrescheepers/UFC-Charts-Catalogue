@@ -1,11 +1,11 @@
 .linechart {
     width: 400px;
-    height: 400px;
-    margin-left: 4%;
+    height: 300px;
+
 }
 .linechart-div{
     text-align: center;
-    margin-left: 4%;
+ 
     padding: 50px 0px 50px 0px;
     color: black;
     display: row;
@@ -21,9 +21,9 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 2%;
-    margin-left: 30%;
-    width: 900px;
-    height: 500px;
+    margin-left: 10%;
+    width: 600px;
+    height: 10px;
 }
 .fight-match{
     font-size: 27;
@@ -37,7 +37,7 @@ btn-primary {
 .moneyline{
     margin-top: 2%;
     display: row;
-    margin-left: 650px;
+    margin-left: 200px;
     margin-bottom: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
