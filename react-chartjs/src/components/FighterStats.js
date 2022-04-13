@@ -56,7 +56,7 @@ export function FighterStats(data) {
                     {
                         label: `${fighter.FirstName} ${fighter.LastName}`,
                         data: [fighter.CareerStats.SigStrikesLandedPerMinute, fighter.CareerStats.SigStrikeAccuracy, fighter.CareerStats.TakedownAverage, fighter.CareerStats.SubmissionAverage, fighter.CareerStats.KnockoutPercentage, fighter.CareerStats.TechnicalKnockoutPercentage, fighter.CareerStats.DecisionPercentage],
-                        backgroundColor: ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', '#E6B333', '#3366E6'],
+                        backgroundColor: ['#d48302', '#07596b', '#4dd5f3', '#0464bc', '#d5b6ab', '#d44446', '#a0e3b7'],
                     },
                 ]
             });
@@ -67,7 +67,7 @@ export function FighterStats(data) {
                     {
                         label: `${fighter.FirstName} ${fighter.LastName}`,
                         data: [fighter.Wins, fighter.Losses, fighter.Draws, fighter.TechnicalKnockouts, fighter.Submissions],
-                        backgroundColor: ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6'],
+                        backgroundColor: ['#b70b0d', '#d34b08', '#f39a05', '#ffb401', '#ffdbb8'],
                     },
                 ]
             });
@@ -112,8 +112,16 @@ export function FighterStats(data) {
                 {filteredFighters.map(fighter => <Dropdown.Item eventKey={fighter.FighterId} key={fighter.FighterId}>{fighter.FirstName} {fighter.LastName}</Dropdown.Item>)}
             </DropdownButton>
             <h1></h1>
-            <Pie data={pieChartData} options={pieChartOptions} />
-            <Bar data={barChartData} options={barChartOptions} />
+            <div className="fighterstat-fightpage">
+                <div className="fight-stat-pie" >
+                    <Pie data={pieChartData} options={pieChartOptions} />
+                </div>
+                <div className="fight-stat-bar">
+                    <Bar data={barChartData} options={barChartOptions} />
+                </div>
+            </div>
+
+
         </div>
     )
 }

@@ -10,21 +10,46 @@ import '../styles/Dashboard.css'
 
 export function Dashboard() {
     return (
-        <section>
-            <h1>This is ma dashboard</h1>
+        <section className='section-dash'>
+
             <div className='welcome-stats-grid'>
                 <div>
                     <h1>Welcome to Fight Site!</h1>
-                    <p>ofihwe weoi weorfih oi hweroih weroh wero hweorh weorh</p>
+                    <p className='p1'>Built for and by fans of the UFC</p>
+                    <p className='p2'>See how we've analysed fight, event and fighter data. <br />
+                        Go on and hover on the graphs!</p>
+                    <div></div>
                 </div>
-                <div>
+
+                <div className='total-avg-fighter-stats'>
                     <TotalFighters />
                     <AvgFighterStats />
                 </div>
+
             </div>
-            <NextFightWinLose />
-            <NextFightStats />
-            <ScheduleChart />
-        </section>
+
+            <div className='schedule-stats-grid'>
+
+                <div>
+
+                    <div className='schedule-stats'>
+                        <div>
+                            <h3>Total Final & Scheduled Fights <br /></h3>
+                        </div>
+                        <div className='stats'>
+                            <ScheduleChart />
+                        </div>
+                    </div>
+                </div>
+
+                <div className='nextfight-stats-grid'>
+                    <NextFightWinLose />
+                </div>
+                <div className='nextfight-bar'>
+                    <NextFightStats />
+                </div>
+            </div>
+
+        </section >
     )
 }

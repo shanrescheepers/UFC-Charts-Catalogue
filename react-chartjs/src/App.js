@@ -19,6 +19,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Timeline } from './pages/Timeline';
 import { Comparison } from './pages/Comparison';
 import { HeaderNav } from './components/HeaderNav';
+import { Nav } from 'react-bootstrap';
 
 ChartJS.register(
   CategoryScale,
@@ -36,6 +37,7 @@ ChartJS.register(
 function App() {
   return (
     <div className="App">
+      <Nav />
       <HeaderNav />
       <Routes>
         <Route path="/" element={<Dashboard />} />
@@ -44,6 +46,7 @@ function App() {
       </Routes>
     </div>
   );
+
 }
 
 export default App;

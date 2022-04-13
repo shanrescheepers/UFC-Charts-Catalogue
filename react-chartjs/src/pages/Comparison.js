@@ -5,12 +5,14 @@ import fighter2 from '../images/fighter_compare_2.svg'
 
 export function Comparison() {
     return (
-        <div>
-            <h1>Compare two fighters!</h1>
-            <div className="fighter-stat-grid">
-                <FighterStats fighterImg={fighter1} />
-                <FighterStats fighterImg={fighter2} />
+        <section>
+            <div >
+                <h1 className="compare-fighters">Compare two fighters!</h1>
+                <div className="fighter-stat-grid">
+                    <FighterStats fighterImg={fighter1} />
+                    <FighterStats fighterImg={fighter2} />
+                </div>
             </div>
-        </div>
+        </section>
     )
 }

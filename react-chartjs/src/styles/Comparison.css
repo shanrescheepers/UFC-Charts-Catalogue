@@ -5,3 +5,15 @@
     grid-gap: 50px;
     padding: 50px
 }
+.fighterstat-fightpage{
+display: row;
+}
+.compare-fighters{
+    color: rgb(237, 237, 237);
+    padding-top: 20px;
+}
+/* .comparison-page{
+    background-color: #1C2236;
+    background-image:linear-gradient(
+        #ED1F27, #2b2b2b);
+} */

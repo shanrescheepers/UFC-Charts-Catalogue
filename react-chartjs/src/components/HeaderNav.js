@@ -2,15 +2,21 @@ import { Navbar, Container, Nav } from 'react-bootstrap'
 
 export function HeaderNav() {
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" className='navigation'>
+
             <Container>
-                <Navbar.Brand>Fight Site</Navbar.Brand>
+
                 <Nav className="me-auto">
-                    <Nav.Link href="/">Dashboard</Nav.Link>
-                    <Nav.Link href="comparison">Comparison</Nav.Link>
-                    <Nav.Link href="timeline">Timeline</Nav.Link>
+                    <div className='FightSite'></div>
+                    <ul className='navlinks'>
+                        <li className='dashboard'> <Nav.Link href="/"></Nav.Link></li><br></br>
+                        <li className='comp'> <Nav.Link href="comparison"></Nav.Link></li>
+                        <br></br>
+                        <li className='timeline'> <Nav.Link href="timeline"></Nav.Link></li>
+                    </ul>
                 </Nav>
             </Container>
-        </Navbar>
+        </Navbar >
     )
+
 }

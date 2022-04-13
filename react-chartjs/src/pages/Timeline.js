@@ -67,17 +67,20 @@ export function Timeline() {
     }
 
     return (
-        <div>
-            <h1>See how evenly each fight was matched</h1>
-            <p>UFC moneyline betting simply comes down to betting on who you believe is going to win the fight. For example, Conor McGregor was a -140 favorite for his fight vs Eddie Alvarez</p>
-            <p>If the line is open, there was no moneyline given to the fighters</p>
-            <DropdownButton onSelect={selection => handleSelect(selection)} id="dropdown-basic-button" title={selectedEvent.name}>
-                {scheduleData.map(event => <Dropdown.Item eventKey={event.EventId} key={event.EventId}>{event.Name}</Dropdown.Item>)}
-            </DropdownButton>
-            <div className="linechart">
-                <Line options={chartOptions} data={chartData} />
-            </div>
-
-        </div>
+        <section>
+            <div>
+                <div className="moneyline">
+                    <h1 className="fight-match">See how evenly each fight was matched</h1>
+                    <p className="betting-def">UFC moneyline betting simply comes down to betting on who you believe is going to win the fight.<br /> For example, Conor McGregor was a -140 favorite for his fight vs Eddie Alvarez who was at 60</p>
+                    <p className="betting-def">If the line is open, there was no moneyline or odds given to the fighters</p>
+                </div>
+                <DropdownButton onSelect={selection => handleSelect(selection)} id="dropdown-basic-button" title={selectedEvent.name}>
+                    {scheduleData.map(event => <Dropdown.Item eventKey={event.EventId} key={event.EventId}>{event.Name}</Dropdown.Item>)}
+                </DropdownButton>
+                <div className="linechart-div">
+                    <Line options={chartOptions} data={chartData} className="linechart" />
+                </div>
+            </div >
+        </section>
     )
 }
