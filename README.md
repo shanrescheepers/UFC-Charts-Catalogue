@@ -1,5 +1,6 @@
 # dv200-reactbootstrapcharts-app
- # ufcfightsite_SEO
+ # DV REACT CHART JS APP
+ 
 This is my ufc fight site web app project for DV200.</br>
 This project was generated with [React](https://reactjs.org/) 
 
