@@ -30,7 +30,18 @@ export function FighterStats(data) {
     }, []);
 
     const filterFighters = (lastname) => {
-        const searchedFighters = fighterData.filter(fighter => fighter.LastName.includes(lastname));
+        // const searchedFighters = fighterData.filter(fighter => fighter.LastName.includes(lastname));
+        let searchedFighters = []
+        console.log(fighterData[0]);
+        for (let i = 0; i < fighterData.length; i++) {
+            const element = fighterData[i];
+            const el = element.LastName
+            // console.log(el);
+            if (el?.includes(lastname)) {
+                searchedFighters.push(element)
+            }
+
+        }
         setFilteredFighters(searchedFighters);
     }
 

@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
-
+import logo from "../images/fs.svg";
 export function HeaderNav() {
     return (
         <Navbar bg="dark" variant="dark" className='navigation'>
@@ -7,7 +7,7 @@ export function HeaderNav() {
             <Container>
 
                 <Nav className="me-auto">
-                    <div className='FightSite'></div>
+                    <img src={logo} className="Logo"></img>
                     <ul className='navlinks'>
                         <li className='dashboard'> <Nav.Link href="/"></Nav.Link></li><br></br>
                         <li className='comp'> <Nav.Link href="comparison"></Nav.Link></li>
