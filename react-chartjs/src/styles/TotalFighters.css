@@ -5,6 +5,11 @@ p {
 span{
     color: #2b2b2b;
 }
+.number{
+    font-family: 'Black Ops One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Karla:wght@300;400;500&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700;1,800&family=Montserrat:wght@400;600;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Oxygen:wght@300;400;700&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+    color: #000000;
+}
 .allfighters-p-tag{
     color: #101D2B;
     font-size: medium;

@@ -71,10 +71,12 @@ export function Timeline() {
             <div className="timeline">
                 <div className="block"></div>
                 <div className="moneyline">
-                    <h1 className="fight-match">See how evenly each fight was matched</h1>
-                    <p className="betting-def">UFC moneyline betting simply comes down to betting on who you believe is going to win the fight.<br /> For example, Conor McGregor was a -140 favorite for his fight vs Eddie Alvarez who was at 60</p>
-                    <p className="betting-def">If the line is open, there was no moneyline or odds given to the fighters</p>
+                    <h1 className="fight-match">Betting Odds & Lines</h1>
+                    <p className="betting-def">UFC moneyline betting simply comes down to betting on who you believe is going to win the fight.<br /> For example, Conor McGreggor was a -140 favorite for his fight vs Eddie Alvarez who was at 60</p>
+                    <p className="betting-def" style={{ textAlign: 'center' }}>If the line is open, there was no moneyline or odds given to the fighters</p>
+                    <p style={{ fontWeight: 'bold' }}>Choose the Event below!</p>
                 </div>
+
                 <DropdownButton onSelect={selection => handleSelect(selection)} id="dropdown-basic-button" title={selectedEvent.name}>
                     {scheduleData.map(event => <Dropdown.Item eventKey={event.EventId} key={event.EventId}>{event.Name}</Dropdown.Item>)}
                 </DropdownButton>
