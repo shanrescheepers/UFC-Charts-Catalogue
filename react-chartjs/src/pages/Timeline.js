@@ -45,7 +45,7 @@ export function Timeline() {
                     {
                         label: "Fighter 1",
                         data: filteredFights.map(fight => fight.Fighters[0].Moneyline),
-                        backgroundColor: "#E31C25",
+                        backgroundColor: "#8F1C24",
                     },
                     {
                         label: "Fighter 2",

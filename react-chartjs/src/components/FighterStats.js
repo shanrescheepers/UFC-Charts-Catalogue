@@ -67,7 +67,7 @@ export function FighterStats(data) {
                     {
                         label: `${fighter.FirstName} ${fighter.LastName}`,
                         data: [fighter.CareerStats.SigStrikesLandedPerMinute, fighter.CareerStats.SigStrikeAccuracy, fighter.CareerStats.TakedownAverage, fighter.CareerStats.SubmissionAverage, fighter.CareerStats.KnockoutPercentage, fighter.CareerStats.TechnicalKnockoutPercentage, fighter.CareerStats.DecisionPercentage],
-                        backgroundColor: ['#d48302', '#07596b', '#4dd5f3', '#0464bc', '#d5b6ab', '#d44446', '#a0e3b7'],
+                        backgroundColor: ['#8F1C24', '#3184D8', '#EBD475', '#213D5C', '#0F5390', '#749F9C', '#095144'],
                     },
                 ]
             });
@@ -78,7 +78,7 @@ export function FighterStats(data) {
                     {
                         label: `${fighter.FirstName} ${fighter.LastName}`,
                         data: [fighter.Wins, fighter.Losses, fighter.Draws, fighter.TechnicalKnockouts, fighter.Submissions],
-                        backgroundColor: ['#b70b0d', '#d34b08', '#f39a05', '#ffb401', '#ffdbb8'],
+                        backgroundColor: ['#8F1C24', '#8C9390', '#EBD475', '#213D5C', '#0F5390'],
                     },
                 ]
             });
@@ -111,11 +111,11 @@ export function FighterStats(data) {
         });
     }
     return (
-        <div>
+        <div className="fighters-stats-all">
             {/* <img src={data.fighterImg} /> */}
             <Form>
-                <Form.Group className="mb-3" controlId="formBasicFighterLastName">
-                    <Form.Label style={{ color: '#D5AB6D' }}>Fighter Lastname</Form.Label>
+                <Form.Group className="mb-3" controlId="formBasicFighterLastName" style={{ color: '#D5AB6D', textAlign: 'left' }}>
+                    <Form.Label style={{ color: '#D5AB6D', textAlign: 'left' }}>Fighter Lastname</Form.Label>
                     <Form.Control onChange={textValue => filterFighters(textValue.target.value)} type="text" placeholder="Enter Fighter Lastname" />
                 </Form.Group>
             </Form>
@@ -124,11 +124,13 @@ export function FighterStats(data) {
             </DropdownButton>
             <h1></h1>
             <div className="fighterstat-fightpage">
-                <div className="fight-stat-pie" >
-                    <Pie data={pieChartData} options={pieChartOptions} />
-                </div>
-                <div className="fight-stat-bar">
-                    <Bar data={barChartData} options={barChartOptions} />
+                <div className="fighter-graphs">
+                    <div className="fight-stat-pie" >
+                        <Pie data={pieChartData} options={pieChartOptions} />
+                    </div>
+                    <div className="fight-stat-bar">
+                        <Bar data={barChartData} options={barChartOptions} />
+                    </div>
                 </div>
             </div>
 

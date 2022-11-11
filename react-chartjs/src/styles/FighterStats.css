@@ -2,24 +2,47 @@
     height: 100px;
     width: auto;
 } */
-
+.fighters-stats-all{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+}
 .fight-stat-pie{
-    height:150px;
-    width: 250px;
+    height:140px;
+    width: 350px;
     padding: 5px;
- 
+    text-align: left;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr;
+
+}
+.fighter-graphs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap:24px;
+    margin-left: 180px;
+}
+.form-control{
+    width: 400px;
 
 }
 .fighterstat-fightpage{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 8px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+grid-gap:20px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px;
 }
 .fight-stat-bar{
     display: grid;
- margin-top: 45px;
+ margin-top: 120px;
     display: grid;
     height:150px;
-    width: 400px;
+    width: 300px;
   
 }
 primary.dropdown-toggle {

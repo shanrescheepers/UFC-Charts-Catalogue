@@ -26,7 +26,7 @@ export function NextFightStats() {
                         {
                             label: fighter2.LastName,
                             data: [fighter2.PreFightWins, fighter2.PreFightDraws, fighter2.PreFightLosses],
-                            backgroundColor: "#E31C25",
+                            backgroundColor: "#8F1C24",
                         },
                     ]
                 });

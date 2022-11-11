@@ -35,7 +35,7 @@ export function NextFightWinLose() {
                                 {
                                     label: fighter2Name,
                                     data: [fighter2Stats.Draws, fighter2Stats.Losses, fighter2Stats.SubmissionLosses, fighter2Stats.Submissions, fighter2Stats.TechnicalKnockoutLosses, fighter2Stats.TechnicalKnockouts, fighter2Stats.TitleDraws, fighter2Stats.TitleLosses, fighter2Stats.TitleWins, fighter2Stats.Wins],
-                                    backgroundColor: "#E31C25",
+                                    backgroundColor: "#8F1C24",
                                 },
                             ]
                         });

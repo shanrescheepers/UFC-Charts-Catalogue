@@ -20,7 +20,7 @@ export function ScheduleChart() {
                     {
                         label: "UFC Schedule 2022",
                         data: [finalEventsCount, scheduledEventsCount],
-                        backgroundColor: ["#111111", "#E31C25"],
+                        backgroundColor: ["#111111", "#8F1C24"],
                     },
                 ]
             });

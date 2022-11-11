@@ -1,14 +1,14 @@
 .lottie{
-    padding-top: 100px;
+    padding-top: 1px;
 
 }
 .fighter-stat-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 20px;
     grid-gap: 50px;
     padding: 50px;
-    margin-top:-20px;
+    margin-top:-140px;
 }
 .fighterstat-fightpage{
 display: row;
