@@ -112,10 +112,10 @@ export function FighterStats(data) {
     }
     return (
         <div>
-            <img src={data.fighterImg} />
+            {/* <img src={data.fighterImg} /> */}
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicFighterLastName">
-                    <Form.Label>Fighter Lastname</Form.Label>
+                    <Form.Label style={{ color: '#D5AB6D' }}>Fighter Lastname</Form.Label>
                     <Form.Control onChange={textValue => filterFighters(textValue.target.value)} type="text" placeholder="Enter Fighter Lastname" />
                 </Form.Group>
             </Form>

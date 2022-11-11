@@ -68,7 +68,8 @@ export function Timeline() {
 
     return (
         <section>
-            <div>
+            <div className="timeline">
+                <div className="block"></div>
                 <div className="moneyline">
                     <h1 className="fight-match">See how evenly each fight was matched</h1>
                     <p className="betting-def">UFC moneyline betting simply comes down to betting on who you believe is going to win the fight.<br /> For example, Conor McGregor was a -140 favorite for his fight vs Eddie Alvarez who was at 60</p>

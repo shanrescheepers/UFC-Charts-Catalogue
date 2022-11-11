@@ -1,8 +1,12 @@
 .schedule-chart {
-    height: 150px;
-    width: 150px;
-    margin-left: 33.3%;
+    /* height: 350px;
+    width: 350px; */
+    /* margin-left: 33.3%; */
     text-align: center !important;
     display: grid !important;
     place-items: center !important;
 }
+/* canvas{
+    width: 400px;
+    height: 400px;
+} */

@@ -1,0 +1,25 @@
+.navigation{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.navigationlogo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 20px;
+    margin-top: -120px;
+}
+.Logo{
+    display: grid;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.navlinks{
+    display: grid;
+    text-align: center;
+padding-left: 150px;
+}

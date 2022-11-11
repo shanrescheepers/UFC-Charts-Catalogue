@@ -1,3 +1,7 @@
+.lottie{
+    padding-top: 100px;
+
+}
 .fighter-stat-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,8 +14,9 @@
 display: row;
 }
 .compare-fighters{
-    color: rgb(237, 237, 237);
-    padding-top: 20px;
+    font-family: 'Black Ops One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Karla:wght@300;400;500&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700;1,800&family=Montserrat:wght@400;600;700&family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Oxygen:wght@300;400;700&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&display=swap');
+    color: #D5AB6D;
 }
 /* .comparison-page{
     background-color: #1C2236;

@@ -41,7 +41,7 @@ export function ScheduleChart() {
 
     return (
         <div className="schedule-chart">
-            <Pie options={chartOptions} data={chartData} />
+            <Pie options={chartOptions} data={chartData} style={{ width: '400px', height: '400px' }} />
         </div>
 
     );

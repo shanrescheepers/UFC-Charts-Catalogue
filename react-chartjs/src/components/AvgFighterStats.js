@@ -33,15 +33,15 @@ export function AvgFighterStats() {
     return (
         <div className="stats-grid">
             <div className="numberCircle">
-                <span>Average Wins</span>
+                <span style={{ color: '#D5AB6D' }}>Average Wins</span>
                 <h2>{fighterStats.avgWins}</h2>
             </div>
             <div className="numberCircle">
-                <span>Average Draws</span>
+                <span style={{ color: '#D5AB6D' }}>Average Draws</span>
                 <h2>{fighterStats.avgDraws}</h2>
             </div>
             <div className="numberCircle">
-                <span>Average Losses</span>
+                <span style={{ color: '#D5AB6D' }}>Average Losses</span>
                 <h2>{fighterStats.avgLosses}</h2>
             </div>
         </div>

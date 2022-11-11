@@ -1,9 +1,9 @@
-body {
-height: 60vh;
+/* body {
+height: 100vh;
   background-color: #1C2236;
-  background-image:linear-gradient(
-      #ED1F27, #2b2b2b);
-}
+  /* background-image:linear-gradient(
+      #ED1F27, #2b2b2b); */
+ 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

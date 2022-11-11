@@ -15,7 +15,7 @@ export function TotalFighters() {
 
     return (
         <div className="total-fighters">
-            <span>TOTAL FIGHTERS</span>
+            <h3>TOTAL FIGHTERS</h3>
 
             <h1>{totalFighters.count}</h1>
             <p className="allfighters-p-tag">All round data of all the fighters in the UFC</p>

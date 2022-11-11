@@ -1,7 +1,7 @@
-img {
+/* img {
     height: 100px;
     width: auto;
-}
+} */
 
 .fight-stat-pie{
     height:150px;
@@ -24,8 +24,8 @@ img {
 }
 primary.dropdown-toggle {
     color: #fff;
-    background-color: #ED1F27;
-    border-color: #ED1F27;
+    background-color: #fff;
+    /* border-color: #ED1F27; */
     border: none;
 }
 
@@ -40,11 +40,17 @@ primary.dropdown-toggle {
     width: auto;
 }
 .btn-primary:hover{
-    background-color: #ED1F27;
+    background-color: #fff;
     border: none;
 }
 .btn-primary:focus{
-    background-color: #ED1F27;
+    background-color: #fff;
     border: none;
 }
 
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #D5AB6D !important;
+    border-color: #a27e47 !important;
+}

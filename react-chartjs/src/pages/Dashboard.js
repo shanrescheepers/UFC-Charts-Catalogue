@@ -15,9 +15,9 @@ export function Dashboard() {
 
             <div className='welcome-stats-grid'>
                 <div>
-                    <h1>Welcome to Fight Site!</h1>
-                    <p className='p1'>Built for and by fans of the UFC</p>
-                    <p className='p2'>See how we've analysed fight, event and fighter data. <br />
+                    <h1 className='welcome-stats-grid-h1'><span style={{ color: '#D5AB6D' }}>Welcome to</span> Fight Site</h1>
+                    <h5 className='p1' style={{ color: '#D5AB6D' }}>Built for and by fans of the UFC</h5>
+                    <p className='p2' style={{ color: '#D5AB6D' }}>See how we've analysed fight, event and fighter data. <br />
                         Go on and hover on the graphs!</p>
                     <div>
                         {/* <lottie-player src='https://assets2.lottiefiles.com/private_files/lf30_2iewyzzp.json' speed="1" style="width: 100px; height: 100px;" hover loop controls autoplay></lottie-player> */}
@@ -38,7 +38,7 @@ export function Dashboard() {
 
                     <div className='schedule-stats'>
                         <div>
-                            <h3>Total Final & Scheduled Fights <br /></h3>
+                            <h3 className='h3'>Total Final & Scheduled Fights <br /></h3>
                         </div>
                         <div className='stats'>
                             <ScheduleChart />
@@ -47,9 +47,11 @@ export function Dashboard() {
                 </div>
 
                 <div className='nextfight-stats-grid'>
+                    <p className='upcoming'>Upcoming fight's fighter Stats</p>
                     <NextFightWinLose />
                 </div>
                 <div className='nextfight-bar'>
+                    <p className='upcoming'>Upcoming fight WINS & LOSSES Fighter Stats</p>
                     <NextFightStats />
                 </div>
             </div>

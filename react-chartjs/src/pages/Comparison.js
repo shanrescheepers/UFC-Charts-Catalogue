@@ -19,12 +19,14 @@ export function Comparison() {
 
     return (
         <section>
-            <Lottie options={defaultOptions}
-                // height={500}
-                // width={100}
-                style={{ "width": "80%", "height": "500px" }}
-                isStopped={false}
-                isPaused={false} />
+            <div className="lottie">
+                <Lottie options={defaultOptions}
+                    // height={500}
+                    // width={100}
+                    style={{ "width": "200px", "height": "200px" }}
+                    isStopped={false}
+                    isPaused={false} />
+            </div>
             <div >
                 <h1 className="compare-fighters">Compare two fighters!</h1>
                 <div className="fighter-stat-grid">
